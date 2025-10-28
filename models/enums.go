@@ -99,3 +99,20 @@ const (
 	DOTA_CONNECTION_STATE_LOADING
 	DOTA_CONNECTION_STATE_FAILED
 )
+
+type DotaMap string
+
+const (
+	DOTA_MAP_DOTA681     DotaMap = "dota_training"
+	DOTA_MAP_DOTA        DotaMap = "dota"
+	DOTA_MAP_DOTA_WINTER DotaMap = "dota_winter"
+	DOTA_MAP_DOTA_AUTUMN DotaMap = "dota_autumn"
+	DOTA_MAP_DIRETIDE    DotaMap = "dota_diretide_12"
+)
+
+type Dota2Version string
+
+const (
+	DOTA2_VERSION_DOTA_681 Dota2Version = "Dota_681"
+	DOTA2_VERSION_DOTA_684 Dota2Version = "Dota_684"
+)

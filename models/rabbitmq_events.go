@@ -71,3 +71,35 @@ type GameResultsEvent struct {
 	BarracksStatus  []int              `json:"barracksStatus"`
 	ExternalMatchID *int64             `json:"externalMatchId,omitempty"`
 }
+
+type LaunchGameServerCommand struct {
+	MatchID      int64             `json:"match_id"`
+	LobbyType    int               `json:"lobby_type"`
+	GameMode     int               `json:"game_mode"`
+	RoomID       string            `json:"room_id"`
+	Map          DotaMap           `json:"map"`
+	FillBots     bool              `json:"fill_bots"`
+	EnableCheats bool              `json:"enable_cheats"`
+	Players      []FullMatchPlayer `json:"players"`
+	Patch        DotaPatch         `json:"patch"`
+	Region       Region            `json:"region"`
+}
+
+type FullMatchPlayer struct {
+	SteamID    string   `json:"steam_id"`
+	Name       string   `json:"name"`
+	Subscriber bool     `json:"subscriber"`
+	Muted      bool     `json:"muted"`
+	PartyID    string   `json:"party_id"`
+	Team       DotaTeam `json:"team"`
+}
+
+type GSMatchInfo struct {
+	Mode       MatchmakingMode   `json:"mode"`
+	Map        DotaMap           `json:"map"`
+	GameMode   DotaGameMode      `json:"game_mode"`
+	RoomID     string            `json:"room_id"`
+	Players    []FullMatchPlayer `json:"players"`
+	Version    Dota2Version      `json:"version"`
+	AverageMMR float64           `json:"average_mmr"`
+}
