@@ -74,8 +74,8 @@ type GameResultsEvent struct {
 
 type LaunchGameServerCommand struct {
 	MatchID      int64             `json:"match_id"`
-	LobbyType    int               `json:"lobby_type"`
-	GameMode     int               `json:"game_mode"`
+	LobbyType    MatchmakingMode   `json:"lobby_type"`
+	GameMode     DotaGameMode      `json:"game_mode"`
 	RoomID       string            `json:"room_id"`
 	Map          DotaMap           `json:"map"`
 	FillBots     bool              `json:"fill_bots"`
