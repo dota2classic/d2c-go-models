@@ -73,33 +73,33 @@ type GameResultsEvent struct {
 }
 
 type LaunchGameServerCommand struct {
-	MatchID      int64             `json:"match_id"`
-	LobbyType    MatchmakingMode   `json:"lobby_type"`
-	GameMode     DotaGameMode      `json:"game_mode"`
-	RoomID       string            `json:"room_id"`
+	MatchID      int64             `json:"matchId"`
+	LobbyType    MatchmakingMode   `json:"lobbyType"`
+	GameMode     DotaGameMode      `json:"gameMode"`
+	RoomID       string            `json:"roomId"`
 	Map          DotaMap           `json:"map"`
-	FillBots     bool              `json:"fill_bots"`
-	EnableCheats bool              `json:"enable_cheats"`
+	FillBots     bool              `json:"fillBots"`
+	EnableCheats bool              `json:"enableCheats"`
 	Players      []FullMatchPlayer `json:"players"`
 	Patch        DotaPatch         `json:"patch"`
 	Region       Region            `json:"region"`
 }
 
 type FullMatchPlayer struct {
-	SteamID    string   `json:"steam_id"`
+	SteamID    string   `json:"steamID"`
 	Name       string   `json:"name"`
 	Subscriber bool     `json:"subscriber"`
 	Muted      bool     `json:"muted"`
-	PartyID    string   `json:"party_id"`
+	PartyID    string   `json:"partyId"`
 	Team       DotaTeam `json:"team"`
 }
 
 type GSMatchInfo struct {
 	Mode       MatchmakingMode   `json:"mode"`
 	Map        DotaMap           `json:"map"`
-	GameMode   DotaGameMode      `json:"game_mode"`
-	RoomID     string            `json:"room_id"`
+	GameMode   DotaGameMode      `json:"gameMode"`
+	RoomID     string            `json:"roomId"`
 	Players    []FullMatchPlayer `json:"players"`
 	Version    Dota2Version      `json:"version"`
-	AverageMMR float64           `json:"average_mmr"`
+	AverageMMR float64           `json:"averageMMR"`
 }
