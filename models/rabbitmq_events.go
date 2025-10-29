@@ -103,3 +103,8 @@ type GSMatchInfo struct {
 	Version    Dota2Version      `json:"version"`
 	AverageMMR float64           `json:"averageMMR"`
 }
+
+type SrcdsServerStartedEvent struct {
+	MatchId int64  `json:"matchId"`
+	Server  string `json:"server"`
+}
