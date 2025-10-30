@@ -31,7 +31,7 @@ type SlotInfo struct {
 }
 
 type LiveMatchUpdateEvent struct {
-	MatchID         int64              `json:"match_id"`
+	MatchID         int64              `json:"matchId"`
 	MatchmakingMode MatchmakingMode    `json:"matchmaking_mode"`
 	GameMode        DotaGameMode       `json:"game_mode"`
 	GameState       DotaGameRulesState `json:"game_state"`
