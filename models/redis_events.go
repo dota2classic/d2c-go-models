@@ -42,3 +42,8 @@ type LiveMatchUpdateEvent struct {
 	Barracks        [2]int             `json:"barracks"`
 	Heroes          []SlotInfo         `json:"heroes"`
 }
+
+type ServerStatusEvent struct {
+	Url       string `json:"url"`
+	IsRunning bool   `json:"running"`
+}
