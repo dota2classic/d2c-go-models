@@ -7,20 +7,20 @@ type PlayerInfo struct {
 	PosX        float64 `json:"pos_x"`
 	PosY        float64 `json:"pos_y"`
 	Angle       float64 `json:"angle"`
-	Mana        int     `json:"mana"`
-	MaxMana     int     `json:"max_mana"`
-	Health      int     `json:"health"`
-	MaxHealth   int     `json:"max_health"`
+	Mana        float64 `json:"mana"`
+	MaxMana     float64 `json:"max_mana"`
+	Health      float64 `json:"health"`
+	MaxHealth   float64 `json:"max_health"`
 	Item0       int     `json:"item0"`
 	Item1       int     `json:"item1"`
 	Item2       int     `json:"item2"`
 	Item3       int     `json:"item3"`
 	Item4       int     `json:"item4"`
 	Item5       int     `json:"item5"`
-	Kills       int     `json:"kills"`
-	Deaths      int     `json:"deaths"`
-	Assists     int     `json:"assists"`
-	RespawnTime int     `json:"respawn_time"`
+	Kills       float64 `json:"kills"`
+	Deaths      float64 `json:"deaths"`
+	Assists     float64 `json:"assists"`
+	RespawnTime float64 `json:"respawn_time"`
 }
 
 type SlotInfo struct {
@@ -35,7 +35,7 @@ type LiveMatchUpdateEvent struct {
 	MatchmakingMode MatchmakingMode    `json:"matchmaking_mode"`
 	GameMode        DotaGameMode       `json:"game_mode"`
 	GameState       DotaGameRulesState `json:"game_state"`
-	Duration        int                `json:"duration"`
+	Duration        float64            `json:"duration"`
 	Server          string             `json:"server"`
 	Timestamp       int64              `json:"timestamp"`
 	Towers          [2]int             `json:"towers"`
