@@ -12,10 +12,10 @@ type PlayerConnectedEvent struct {
 }
 
 type MatchFailedEvent struct {
-	MatchID       int64
-	Server        string
-	FailedPlayers []string
-	GoodParties   []string
+	MatchID       int64    `json:"matchId"`
+	Server        string   `json:"serverUrl"`
+	FailedPlayers []string `json:"failedPlayers"`
+	GoodParties   []string `json:"goodParties"`
 }
 
 type PlayerAbandonedEvent struct {
