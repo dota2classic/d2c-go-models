@@ -108,7 +108,3 @@ type SrcdsServerStartedEvent struct {
 	MatchId int64  `json:"matchId"`
 	Server  string `json:"server"`
 }
-
-type KillServerRequestedEvent struct {
-	Url string `json:"url"`
-}

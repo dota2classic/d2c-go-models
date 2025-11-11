@@ -47,3 +47,7 @@ type ServerStatusEvent struct {
 	Url       string `json:"url"`
 	IsRunning bool   `json:"running"`
 }
+
+type KillServerRequestedEvent struct {
+	MatchID int64 `json:"matchId"`
+}
