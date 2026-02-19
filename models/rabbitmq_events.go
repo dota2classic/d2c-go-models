@@ -73,19 +73,20 @@ type GameResultsEvent struct {
 }
 
 type LaunchGameServerCommand struct {
-	MatchID       int64             `json:"matchId"`
-	LobbyType     MatchmakingMode   `json:"lobbyType"`
-	GameMode      DotaGameMode      `json:"gameMode"`
-	RoomID        string            `json:"roomId"`
-	Map           DotaMap           `json:"map"`
-	FillBots      bool              `json:"fillBots"`
-	EnableCheats  bool              `json:"enableCheats"`
-	Players       []FullMatchPlayer `json:"players"`
-	Patch         DotaPatch         `json:"patch"`
-	Region        Region            `json:"region"`
-	NoRunes       bool              `json:"noRunes"`
-	MidTowerToWin bool              `json:"midTowerToWin"`
-	KillsToWin    int               `json:"killsToWin"`
+	MatchID        int64             `json:"matchId"`
+	LobbyType      MatchmakingMode   `json:"lobbyType"`
+	GameMode       DotaGameMode      `json:"gameMode"`
+	RoomID         string            `json:"roomId"`
+	Map            DotaMap           `json:"map"`
+	FillBots       bool              `json:"fillBots"`
+	EnableCheats   bool              `json:"enableCheats"`
+	Players        []FullMatchPlayer `json:"players"`
+	Patch          DotaPatch         `json:"patch"`
+	Region         Region            `json:"region"`
+	NoRunes        bool              `json:"noRunes"`
+	EnableBanStage bool              `json:"enableBanStage"`
+	MidTowerToWin  bool              `json:"midTowerToWin"`
+	KillsToWin     int               `json:"killsToWin"`
 }
 
 type FullMatchPlayer struct {
