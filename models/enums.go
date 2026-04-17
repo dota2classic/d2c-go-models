@@ -71,7 +71,7 @@ type DotaPatch string
 const (
 	PATCH_DOTA_684       DotaPatch = "DOTA_684"
 	PATCH_DOTA_684_TURBO DotaPatch = "DOTA_684_TURBO"
-	DOTA_688             DotaPatch = "DOTA_688"
+	PATCH_DOTA_688       DotaPatch = "DOTA_688"
 )
 
 type Region string
