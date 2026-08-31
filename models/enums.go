@@ -64,6 +64,10 @@ const (
 	MATCHMAKING_MODE_LOBBY
 	MATCHMAKING_MODE_BOTS_2X2
 	MATCHMAKING_MODE_TURBO
+	// Locked placeholders — not open for matchmaking yet, see
+	// dota2classic/gateway shared-types/matchmaking-mode.ts.
+	MATCHMAKING_MODE_SECRET
+	MATCHMAKING_MODE_REAL_TRUE_OLD_DOTACLASSIC
 )
 
 type DotaPatch string
